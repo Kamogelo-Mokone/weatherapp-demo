@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="css/styles.css"/> 
+    </head>
+    <!-- This is not a normal html page.-->
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <article class="widget">
+                
+                <form class="SearchLocation"><input placeholder="Enter your Zip code..." type = "text"/>
+                    <button>Search</button>
+                </form>
+
+                
+                   <!--Becarful-->
+                    <div class="Icon">
+                    <i class="CloudIcon"></i>
+                    </div>
+                    <!--Becarful-->
+
+
+                <div class="weatherInfo">
+                    <div class="temperature"><span></span></div>
+                    <div class="description">    
+                        <div class="WConditions"></div>    
+                        <div class="place"></div>
+                    </div>
+                </div>
+
+                <div class="date"></div>
+            </article>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
